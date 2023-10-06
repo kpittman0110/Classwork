@@ -1,0 +1,53 @@
+def add_nums(one, two):
+    sum = one + two
+    return str(sum)
+def sub_nums(first, second):
+    return str(first - second)
+def mult_nums(first, second):
+    return str(first * second)
+def div_nums(first, second):
+    if second == 0:
+        return 'cannot divide by zero'
+    else:
+        return str(first / second)
+def mod_nums(first, second):
+    if second == 0:
+        return 'cannot divide by zero'
+    else:
+        return str(first % second)
+def calculate(n1, n2, op):
+    if op == '+':
+        return add_nums(n1, n2)
+    elif op == '-':
+        return sub_nums(n1, n2)
+    elif op == '*':
+        return mult_nums(n1, n2)
+    elif op == '/':
+        return div_nums(n1, n2)
+    elif op == '%':
+        return mod_nums(n1, n2)
+
+while True:
+    num1 = int(input('enter first number: '))
+    num2 = int(input('enter second number: '))
+    oper = input('what math operation? (+, -, *, /, %): ')
+    print('answer = ' + calculate(num1, num2, oper))
+
+    quit = input('do you want to quit? (y,n): ')
+    if quit == 'y':
+        break
+    print('')  #this leaves a blank line between executions
+
+
+# if oper == '+':
+#     print("addition: " + add_nums(num1 + num2))
+# elif oper == '-':
+#     print("subtraction: " + sub_nums(num1 - num2))
+# elif oper == '*':
+#     print("product: " + mult_nums(num1 * num2))
+# elif oper == '/':
+#     print("quotient: " + div_nums(num1 / num2))
+# elif oper == '%':
+#     print("modulo: " + mod_nums(num1 % num2))
+# else:
+#     print('invalid operation')
