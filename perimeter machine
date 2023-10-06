@@ -1,0 +1,21 @@
+# TODO: write app that calculates perimeter for a square, rectangle, and triangle
+print('Welcome to the perimeter machine')
+print("I will ask for 3 whole numbers and then i will calculate 3 perimeters")
+print('Square first, then rectangle, then triangle')
+
+
+# TODO: ask for 3 inputs (int)
+input1 = int(input('Enter first number: '))
+# input1 is for square side, long rect side and 1 triangle side
+input2 = int(input('Enter second number: '))
+# input2 is for short rect side and 1 triangle side
+input3 = int(input('Enter third number: '))
+# input3 is for third triangle side
+
+# perimeters:
+    # p of square = 4x side
+print('The perimeter of the square is: ' + str(4*input1))
+    # p of rectangle = 2x long + 2x short or 2x (l2ong + short)
+print('The perimeter of the rectangle is: ' + str((2*input1) + (2*input2)))
+    # p of triangle = side + side + side
+print('The perimeter of the triangle is: ' + str(input1 +input2 + input3))
