@@ -1,0 +1,39 @@
+# Create a function to calculate the area of a circle (arg: radius)
+# Create a function to calculate the area of a rectangle (args: length, width)
+# Create a function to calculate the area of a triangle (args: base, height)
+
+import math
+
+def circle_area(radius):
+    return str(math.pi * radius * radius)
+def rectangle_area(length, width):
+    return str(length * width)
+def triangle_area(base, height):
+    return str(base * height / 2)
+
+print('welcome to the geometry calculator')
+print('i calculate the area of a circle (c), rectangle (r), and triangle (t)')
+
+while True:
+    shape =  input('what shape do you want to calculate the area of? (c, r or t)')
+    shape = shape.lower()
+
+    if shape == 'c':
+        rad = int(input('enter the radius: '))
+        print('area of the circle is: ' + circle_area(rad))
+    elif shape == 'r':
+        l = int(input('enter the length: '))
+        w = int(input('enter the width: '))
+        print('area of the rectangle is: ' + rectangle_area(l, w))
+    elif shape == 't':
+        b = int(input('enter the base: '))
+        h = int(input('enter the height: '))
+        print('area of the triangle is: ' + triangle_area(b, h))
+    else:
+        print('the math isnt mathing')
+
+    quit = input('do you want to quit? (y,n): ')
+    quit = quit.lower()
+    if quit == 'y':
+        break
+    print('')
