@@ -1,0 +1,13 @@
+num1 = int( input('Enter first number: '))
+num2 = int( input('Enter second number: '))
+
+sum = num1 + num2
+print('The sum is ' + str(sum))
+
+print('The difference is ' + str(num1 - num2))
+print('The other difference is ' + str(num1 - num2))
+
+print('Product: ' + str(num1 * num2))
+
+print('Quotient: ' + str(num1 / num2))
+print('Other Quotient: ' + str(num1 / num2))
