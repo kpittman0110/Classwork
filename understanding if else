@@ -1,0 +1,9 @@
+num = int(input('Enter a number: '))
+if num < 20:
+    print('less than 20')
+elif num >= 20 and num < 40:
+    print('less than 40')
+elif num < 60:
+    print('less than 60')
+else:
+    print('60 or higher')
