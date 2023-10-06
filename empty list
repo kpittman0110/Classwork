@@ -1,0 +1,27 @@
+#empty list
+task_list = []
+first_task = input('enter the first task: ')
+task_list.append(first_task)
+print ('greetings code lords')
+
+while True:
+    print('here are the options: \n\t1), add new tast\n\t2), remove a task\n\t3), print list')
+    choice = input('select an option: ')
+    if choice =='1':
+        new_task = input('enter the new task: ')
+        task_list.append(new_task)
+        print ('here is the list {}' .format(task_list))
+    elif choice == '2':
+        remove_task = input('re-type the task to be removed: ')
+        task_list.remove(remove_task)
+        print ('here is the list {}' .format(task_list))
+    elif choice == '3':
+        print ('here is the list {}' .format(task_list))
+    else:
+        print ('invalid choice')
+
+    quit = input('do you want to quit? (y,n): ')
+    quit = quit.lower()
+    if quit == 'y':
+        break
+    print('')
