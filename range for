@@ -1,0 +1,54 @@
+#figuring out how to create ranges
+# r1 = list(range(100))
+# print(r1)
+
+# r2 = list(range(50, 200))
+# print(r2)
+
+# r3 = list(range(50, 200, 4))
+# print(r3)
+
+# for loop with a list
+# daysofweek = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+# for d in daysofweek:
+#     print(d)
+# #this prints it in a vertical line
+
+# # for loop with a range
+# for i in range(20):
+#     print(i)
+# # i stands for index
+
+# for i in range(100, 150):
+#     print(i)
+
+# for i in range(100, 150, 5):
+#     print(i)
+for i in range(10, 20):
+    if i % 2 == 0:
+        print('{} is even'.format(i))
+    else:
+        print('{} is odd'.format(i))
+
+
+
+# msg = 'Python'
+# for i in range(len(msg)):
+#     print(msg[i])
+# for i in range(len(msg)):
+#     print('the letter at the index {} is {}'.format(i, msg[i]))
+# for i in reversed(range(len(msg))):
+#     print('the letter at the index {} is {}'.format(i,msg[i]))
+
+#string split
+sentence = 'the quick brown fox jumped over the lazy dog'
+for word in sentence.split():
+    print(word)
+
+month_list = 'jan, feb, mar, apr, jun, jul'
+for mon in month_list.split(','):
+    print(mon)
+
+days_of_week = 'mon#tue#wed#thu#fri'
+for day in days_of_week.split('#'):
+    print(day)
